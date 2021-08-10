@@ -8,12 +8,12 @@
 
 		<!-- set NewIcon to on to display image otherwise set the state attribute to off -->
 		<button id="NewIcon" assetURL="tools/img/interface/new_icon.png" state="on"/>
-		<button id="MoreMixels" assetURL="tools/img/interface/btn_moreMixels.png" pageURL="/buffer/lego/index.html?http://www.lego.com/mixels" window="_blank"/>
+		<button id="MoreMixels" assetURL="tools/img/interface/btn_moreMixels.png" />
 		<button id="MoreMixelsShort" assetURL="tools/img/interface/btn_moreMixelsShort.png" />
 		<button id="MoreMixelsLong" assetURL="tools/img/interface/btn_moreMixelsLong.png" />
-		<button id="MoreCNLogo" assetURL="tools/img/interface/moreCNlogo.png" pageURL="/buffer/index.html?http://www.cartoonnetwork.com/mobile" window="_blank"/>
-		<button id="MoreLego" assetURL="tools/img/interface/moreLego.png" pageURL="/buffer/lego/index.html?http://www.lego.com/mixels" window="_blank"/>
-		<button id="MobileGame" assetURL="tools/img/interface/btn_mobileGames.png" pageURL="/buffer/index.html?http://www.cartoonnetwork.com/mobile" window="_blank"/>
+		<button id="MoreCNLogo" assetURL="tools/img/interface/moreCNlogo.png" />
+		<button id="MoreLego" assetURL="tools/img/interface/moreLego.png" />
+		<button id="MobileGame" assetURL="tools/img/interface/btn_mobileGames.png" />
 		<button id="MobileLogo" assetURL="tools/img/interface/mobileLogo.png" />
    		<button id="Detail_MixBtn" assetURL="tools/img/interface/detail_mix_btn.png" />
 		<button id="Mixer_MixBtn" assetURL="tools/img/interface/mixer_mix_btn.png" />
@@ -21,7 +21,7 @@
 		<button id="More_VideosBtn" assetURL="tools/img/interface/btn_moreVideos.png" />
 		<img id="About_Header" assetURL="tools/img/interface/aboutHeader.jpg" />
 
-		<mainVideoPage pageURL="http://www.mixels.com/buffer/index.html?http://www.cartoonnetwork.com/tv_shows/mixels/video/index.html" window="_self"/>
+		<mainVideoPage />
 		<siteIntroVideo videoURL="tools/tempVideo/mixels_intro.flv" />
 		<defaultMusic assetURL="tools/sounds/music1.mp3" />
 		
