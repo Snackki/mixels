@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cartoonnetwork>
+    
+    <config soTarget="Mixels_Mixer" />
+	
+	<siteAssets>
+		<!-- To open link urls in new window set 'window' to '_blank'  default if no 'window' parameter is set will be '_self' and will open in the same window -->
+
+		<!-- set NewIcon to on to display image otherwise set the state attribute to off -->
+		<button id="NewIcon" assetURL="tools/img/interface/new_icon.png" state="on"/>
+		<button id="MoreMixels" assetURL="tools/img/interface/btn_moreMixels.png" pageURL="/buffer/lego/index.html?http://www.lego.com/mixels" window="_blank"/>
+		<button id="MoreMixelsShort" assetURL="tools/img/interface/btn_moreMixelsShort.png" />
+		<button id="MoreMixelsLong" assetURL="tools/img/interface/btn_moreMixelsLong.png" />
+		<button id="MoreCNLogo" assetURL="tools/img/interface/moreCNlogo.png" pageURL="/buffer/index.html?http://www.cartoonnetwork.com/mobile" window="_blank"/>
+		<button id="MoreLego" assetURL="tools/img/interface/moreLego.png" pageURL="/buffer/lego/index.html?http://www.lego.com/mixels" window="_blank"/>
+		<button id="MobileGame" assetURL="tools/img/interface/btn_mobileGames.png" pageURL="/buffer/index.html?http://www.cartoonnetwork.com/mobile" window="_blank"/>
+		<button id="MobileLogo" assetURL="tools/img/interface/mobileLogo.png" />
+   		<button id="Detail_MixBtn" assetURL="tools/img/interface/detail_mix_btn.png" />
+		<button id="Mixer_MixBtn" assetURL="tools/img/interface/mixer_mix_btn.png" />
+		<button id="Mixer_MixAgainBtn" assetURL="tools/img/interface/mixAgain_btn.png" />
+		<button id="More_VideosBtn" assetURL="tools/img/interface/btn_moreVideos.png" />
+		<img id="About_Header" assetURL="tools/img/interface/aboutHeader.jpg" />
+
+		<mainVideoPage pageURL="http://www.mixels.com/buffer/index.html?http://www.cartoonnetwork.com/tv_shows/mixels/video/index.html" window="_self"/>
+		<siteIntroVideo videoURL="tools/tempVideo/mixels_intro.flv" />
+		<defaultMusic assetURL="tools/sounds/music1.mp3" />
+		
+		<!-- SET TEXT ALIGN TO "left" OR "right". WILL BE APPLIED TO <about> text VIEWED IN MAIN NAV POPUP. ALSO APPLIES TO INDIVIDUAL CHARACTER DESCRIPTION BIO PANELS <mixelDescription> -->
+		<textAlignment justify="left" />
+		
+		<skipBtn>
+		SKIP
+		</skipBtn>
+		
+		<gamesText>
+		\nExplore the world of \nMixels to find secret areas \nand unlock games!
+		</gamesText>
+		
+		<legal>TM & © 2014 Cartoon Network. LEGO, the LEGO logo, and MIXELS are trademarks and/or copyrights of the LEGO Group.\n© 2014 The Lego Group. All Rights Reserved.</legal>
+		
+		<!-- COMMENT privacyPolicy NODE OUT IF NO PRIVACY BUTTON DESIRED. PRIVACY BUTTON WILL HIDE IF THIS NODE NOT FOUND --> 
+		<privacyPolicy>
+		PRIVACY POLICY
+		</privacyPolicy>
+		
+		<!-- COMMENT about NODE OUT IF NO ABOUT SECTION DESIRED. ABOUT BUTTON WILL HIDE IF THIS NODE NOT FOUND --> 
+		<!-- USE /n FOR LINE BREAKS --> 
+		<about>
+		Mixels features a world of colorful creatures who can mix and combine with each other, with hilarious and surprising results.
+		</about>
+		
+		<!-- COMMENT COOKIE WARNING NODE OUT IF NO COOKIE WARNING IS NEEDED. WARNING WILL NOT SHOW IF THIS NODE NOT FOUND 
+		 <cookieWarning thankyouTxt="Thank you for accepting our cookies" actionTxt="You can now hide this message or find out more about cookies" hideBtn="Hide this message" infoBtn="I want more information" infoURL="http://eucookies.turner.com/"  window="_blank"/>-->
+				
+	</siteAssets>
+	
+	<tribes>
+	
+		<red tribeName="Infernites" hex1="DD2211" hex2="862423" nameAsset="tools/img/tribeTitles/infernites.png" music="tools/sounds/music4.mp3">
+			<availCubit type="grey_red" />
+			<availCubit type="red_yellow" />
+			<availCubit type="blue_red" />
+		
+			<mixel name="Vulk" asset="tools/media/vulk.swf" nameAsset="tools/img/mixelNames/VULK.png" iconAsset="tools/img/mixelIcons/vulk.png" >
+				  <mixelDescription descrip="Dimwitted but lovable, he has superheated hands, so watch out for high fives!" />
+				  
+				  <availCubit type="grey_red" />
+				  <availCubit type="red_yellow" />
+				  <availCubit type="blue_red" />
+				  
+				  <videoAsset thumb="tools/tempVideo/Vulk_sizzle3_320x184.png" videoURL="tools/tempVideo/Vulk_sizzle3_640x360.f4v" /> 
+			</mixel>
+			
+			<mixel name="Flain" asset="tools/media/flain.swf" nameAsset="tools/img/mixelNames/FLAIN.png"   iconAsset="tools/img/mixelIcons/flain.png" >
+				  <mixelDescription descrip="As the smart one of the bunch, he always tries to keep a level head, even if it is on fire." />
+				  
+				  <availCubit type="grey_red" />
+				  <availCubit type="red_yellow" />	
+				  <availCubit type="blue_red" />
+			
+				  <videoAsset thumb="tools/tempVideo/Flain_sizzle3_320x184.png" videoURL="tools/tempVideo/Flain_sizzle3_640x360.f4v" />  
+			</mixel>
+			
+			<mixel name="Zorch" asset="tools/media/zorch.swf" nameAsset="tools/img/mixelNames/ZORCH.png" iconAsset="tools/img/mixelIcons/zorch.png"  >
+				  <mixelDescription descrip="Fiery jets let this crazy prankster run around with surprising speed." />
+				  
+				  <availCubit type="grey_red" />
+				  <availCubit type="red_yellow" />
+				  <availCubit type="blue_red" />
+				  
+				  <videoAsset thumb="tools/tempVideo/Zorch_sizzle3_320x184.png" videoURL="tools/tempVideo/Zorch_sizzle3_640x360.f4v" />  
+			</mixel>
+		</red>
+
+
+
+	
+		<grey tribeName="Cragsters" hex1="888888" hex2="555555" nameAsset="tools/img/tribeTitles/cragsters.png" music="tools/sounds/music2.mp3">
+			<availCubit type="grey_red" />
+			<availCubit type="grey_yellow" />	
+		
+			<mixel name="Krader" asset="tools/media/krader.swf" nameAsset="tools/img/mixelNames/KRADER.png" iconAsset="tools/img/mixelIcons/krader.png">
+				  <mixelDescription descrip="He's a tough, no-nonsense guy with a giant hand that can dig through anything." />
+				  
+				  <availCubit type="grey_red" />
+				  <availCubit type="grey_yellow" />	
+				  
+				  <videoAsset thumb="tools/tempVideo/Krader_320x184.png" videoURL="tools/tempVideo/Krader_640x360.flv" />  
+			</mixel>
+			
+			
+			<mixel name="Seismo" asset="tools/media/seismo.swf" nameAsset="tools/img/mixelNames/SEISMO.png" iconAsset="tools/img/mixelIcons/seismo.png">
+				  <mixelDescription descrip="Shy and nervous, he has huge feet that can cause earthquakes and break through rocks." />
+				  
+				  <availCubit type="grey_red" />
+				  <availCubit type="grey_yellow" />	
+				  
+				  <videoAsset thumb="tools/tempVideo/Seismo_320x184.png" videoURL="tools/tempVideo/Seismo_640x360.flv" />  
+			</mixel>
+			
+			 <mixel name="Shuff" asset="tools/media/shuff.swf" nameAsset="tools/img/mixelNames/SHUFF.png" iconAsset="tools/img/mixelIcons/shuff.png">
+				  <mixelDescription descrip="Clumsy, timid and overly nice, he has a body like a living wrecking ball." />
+				  
+				  <availCubit type="grey_red" />
+				  <availCubit type="grey_yellow" />	
+	
+				  <videoAsset thumb="tools/tempVideo/Shuff_320x184.png" videoURL="tools/tempVideo/Shuff_640x360.flv" />  
+			</mixel>
+			
+		</grey>		
+		
+		<yellow tribeName="Electroids" hex1="FFD700" hex2="C29F08" nameAsset="tools/img/tribeTitles/electroids.png" music="tools/sounds/music3.mp3">
+			<availCubit type="red_yellow" />
+			<availCubit type="grey_yellow" />
+			<availCubit type="orange_yellow" />				  
+			
+			<mixel name="Volectro" asset="tools/media/volectro.swf" nameAsset="tools/img/mixelNames/VOLECTRO.png" iconAsset="tools/img/mixelIcons/volectro.png">
+				  <mixelDescription descrip="He's a scatter-brained jokester whose body constantly emits static energy." />
+				  
+				  <availCubit type="red_yellow" />
+				  <availCubit type="grey_yellow" />
+				  <availCubit type="orange_yellow" />
+				  				  
+				  <videoAsset thumb="tools/tempVideo/Volectro_320x184.png" videoURL="tools/tempVideo/Volectro_640x360.f4v" />  
+			</mixel>
+			
+			<mixel name="Teslo"  asset="tools/media/teslo.swf" nameAsset="tools/img/mixelNames/TESLO.png" iconAsset="tools/img/mixelIcons/teslo.png">
+				  <mixelDescription  descrip="Daring and ingenious, he can use his electrically charged tail to scale any surface." />
+				  <availCubit type="grey_yellow" />
+				  <availCubit type="red_yellow" /> 
+				  <availCubit type="orange_yellow" />				  
+
+				   <videoAsset thumb="tools/tempVideo/Teslo_320x184.png" videoURL="tools/tempVideo/Teslo_640x360.f4v" />  
+			</mixel>
+			
+			<mixel name="Zaptor"  asset="tools/media/zaptor.swf" nameAsset="tools/img/mixelNames/ZAPTOR.png" iconAsset="tools/img/mixelIcons/zaptor.png">
+				  <mixelDescription descrip="A highly charged adrenaline junkie, his body is like a lightning rod, storing up blasts of energy." />
+				  <availCubit type="grey_yellow" />	
+				  <availCubit type="red_yellow" />
+				  <availCubit type="orange_yellow" />				  
+
+				  <videoAsset thumb="tools/tempVideo/Zaptor_320x184.png" videoURL="tools/tempVideo/Zaptor_640x360.f4v" />  
+			</mixel>
+			
+		</yellow>
+		
+		<blue tribeName="Frosticons" hex1="00BEF6" hex2="D4D4D4" nameAsset="tools/img/tribeTitles/frosticons.png" music="tools/sounds/FrosticonsLoop.mp3">
+			<availCubit type="blue_orange" />
+			<availCubit type="blue_brown" />
+			<availCubit type="blue_red" />
+			
+			<mixel name="Flurr"  asset="tools/media/flurr.swf" nameAsset="tools/img/mixelNames/FLURR.png" iconAsset="tools/img/mixelIcons/flurr.png">
+				  <mixelDescription descrip="Naturally curious, he can take to the air to explore the Frosticon lands." />
+				  <availCubit type="blue_orange" />
+				  <availCubit type="blue_brown" />
+				  <availCubit type="blue_red" /> 
+				  
+				  <videoAsset thumb="tools/tempVideo/Flur_320x184.png" videoURL="tools/tempVideo/Flur_640x360.f4v" />  
+			</mixel>
+			
+			<mixel name="Slumbo" asset="tools/media/slumbo.swf" nameAsset="tools/img/mixelNames/SLUMBO.png" iconAsset="tools/img/mixelIcons/slumbo.png">
+				  <mixelDescription descrip="His strength is incredible, if you can keep him awake long enough to use it." />
+				  <availCubit type="blue_red" />
+				  <availCubit type="blue_orange" />
+				  <availCubit type="blue_brown" /> 
+				  
+				  <videoAsset thumb="tools/tempVideo/Slumbo_320x184.png" videoURL="tools/tempVideo/Slumbo_640x360.f4v" />  
+				</mixel>
+			
+			<mixel name="Lunk"  asset="tools/media/lunk.swf" nameAsset="tools/img/mixelNames/LUNK.png" iconAsset="tools/img/mixelIcons/lunk.png">
+				  <mixelDescription  descrip="He's not the smartest or most graceful, but his ice exoskeleton makes him extra tough." />
+				  <availCubit type="blue_orange" />
+				  <availCubit type="blue_red" />
+				  <availCubit type="blue_brown" /> 
+
+				   <videoAsset thumb="tools/tempVideo/Lunk_320x184.png" videoURL="tools/tempVideo/Lunk_640x360.f4v" />  
+			</mixel>
+			
+	
+		</blue>
+		
+		
+		<brown tribeName="FangGang" hex1="501F00" hex2="753A11" nameAsset="tools/img/tribeTitles/fanggang.png" music="tools/sounds/FangGangLoop.mp3">
+			<availCubit type="brown_orange" />
+			<availCubit type="blue_brown" />
+			
+			<mixel name="Chomly" asset="tools/media/chomly.swf" nameAsset="tools/img/mixelNames/CHOMLY.png" iconAsset="tools/img/mixelIcons/chomly.png">
+				  <mixelDescription descrip="A lethargic trash compactor, he'll eat just about anything that's not nailed down." />
+				  <availCubit type="brown_orange" />
+				  <availCubit type="blue_brown" />
+				  
+				   <videoAsset thumb="tools/tempVideo/Chomly_320x184.png" videoURL="tools/tempVideo/Chomly_640x360.f4v" />  
+				</mixel>
+			
+			<mixel name="Gobba"  asset="tools/media/gobba.swf" nameAsset="tools/img/mixelNames/GOBBA.png" iconAsset="tools/img/mixelIcons/gobba.png">
+				  <mixelDescription  descrip="His whip-like tongue has a super sense of taste that is amazingly accurate." />
+				  <availCubit type="brown_orange" />
+			      <availCubit type="blue_brown" />
+
+				   <videoAsset thumb="tools/tempVideo/Gobba_320x184.png" videoURL="tools/tempVideo/Gobba_640x360.f4v" />  
+			</mixel>
+			
+			<mixel name="Jawg"  asset="tools/media/jawg.swf" nameAsset="tools/img/mixelNames/JAWG.png" iconAsset="tools/img/mixelIcons/jawg.png" >
+				  <mixelDescription descrip="Fiercely loyal, he'll gladly use his indestructible teeth to protect his friends." />
+				  <availCubit type="brown_orange" />
+				  <availCubit type="blue_brown" />
+
+				  <videoAsset thumb="tools/tempVideo/Jawg_320x184.png" videoURL="tools/tempVideo/Jawg_640x360.f4v" />  
+			</mixel>
+		</brown>
+		
+		<orange tribeName="Flexers" hex1="FF8500" hex2="D16200" nameAsset="tools/img/tribeTitles/flexers.png" music="tools/sounds/FlexersLoop.mp3">
+				  <availCubit type="brown_orange" />
+				  <availCubit type="orange_yellow" />				  
+				  <availCubit type="blue_orange" />
+			
+			<mixel name="Kraw" asset="tools/media/kraw.swf" nameAsset="tools/img/mixelNames/KRAW.png" iconAsset="tools/img/mixelIcons/kraw.png">
+				  <mixelDescription descrip="He loves to stretch his intellect in a battle of wits, but he also just loves to stretch and bounce." />
+				  <availCubit type="brown_orange" />
+				  <availCubit type="orange_yellow" />				  
+				  <availCubit type="blue_orange" />
+				  
+				  <videoAsset thumb="tools/tempVideo/Kraw_320x184.png" videoURL="tools/tempVideo/Kraw_640x360.f4v" />  
+				</mixel>
+			
+			<mixel name="Tentro"  asset="tools/media/tentro.swf" nameAsset="tools/img/mixelNames/TENTRO.png" iconAsset="tools/img/mixelIcons/tentro.png">
+				  <mixelDescription  descrip="Although he suffers from a lack of confidence, his tentacles make him powerful and versatile." />
+				  <availCubit type="brown_orange" />
+			      <availCubit type="blue_orange" />
+				  <availCubit type="orange_yellow" />				  
+
+				  <videoAsset thumb="tools/tempVideo/Tentro_320x184.png" videoURL="tools/tempVideo/Tentro_640x360.f4v" />  
+			</mixel>
+			
+			<mixel name="Balk"  asset="tools/media/balk.swf" nameAsset="tools/img/mixelNames/BALK.png" iconAsset="tools/img/mixelIcons/balk.png">
+				  <mixelDescription descrip="He uses his head like a rubber mallet, but he may have knocked a few screws loose." />
+				  <availCubit type="brown_orange" />
+				  <availCubit type="blue_orange" />
+				  <availCubit type="orange_yellow" />				  
+
+				  <videoAsset thumb="tools/tempVideo/Balk_320x184.png" videoURL="tools/tempVideo/Balk_640x360.f4v" />  
+			</mixel>
+		</orange>
+		
+		<purple tribeName="Wiztastics" hex1="6947AB" hex2="7B53C4" nameAsset="tools/img/tribeTitles/wiztastics.png" music="tools/sounds/WizLoop.mp3">
+				  <availCubit type="purple_green" />
+				  <availCubit type="purple_tan" />				  
+				  				  
+			<mixel name="Wizwuz" asset="tools/media/wizwuz.swf" nameAsset="tools/img/mixelNames/WIZWUZ.png" iconAsset="tools/img/mixelIcons/wizwuz.png">
+				  <mixelDescription descrip="Whether burping magic spells or hanging around, this goofy assistant loves to perform." />
+				  <availCubit type="purple_green" />
+				  <availCubit type="purple_tan" />				  
+				  <videoAsset thumb="tools/tempVideo/Wizwuz_320x184.png" videoURL="tools/tempVideo/Wizwuz_640x360.f4v" />  
+				</mixel>
+			
+			<mixel name="Magnifo"  asset="tools/media/magnifo.swf" nameAsset="tools/img/mixelNames/MAGNIFO.png" iconAsset="tools/img/mixelIcons/magnifo.png">
+				  <mixelDescription  descrip="He may be cheesy, but this super-confident magician puts loads of energy into every show." />
+				  <availCubit type="purple_green" />
+				  <availCubit type="purple_tan" />				  
+				  <videoAsset thumb="tools/tempVideo/Magnifo_320x184.png" videoURL="tools/tempVideo/Magnifo_640x360.f4v" />  
+			</mixel>
+			
+			<mixel name="Mesmo"  asset="tools/media/mesmo.swf" nameAsset="tools/img/mixelNames/MESMO.png" iconAsset="tools/img/mixelIcons/mesmo.png">
+				  <mixelDescription descrip="This assistant makes up for his lack of showmanship with a magic tail that drops spells." />
+				  <availCubit type="purple_green" />				  
+				  <availCubit type="purple_tan" />				  
+				  <videoAsset thumb="tools/tempVideo/Mesmo_320x184.png" videoURL="tools/tempVideo/Mesmo_640x360.f4v" />  
+			</mixel>
+		</purple>
+
+		<green tribeName="GlorpCorp" hex1="02C337" hex2="81CF3A" nameAsset="tools/img/tribeTitles/glorpcorp.png" music="tools/sounds/GlorpLoop.mp3">
+				  <availCubit type="green_tan" />	
+				  <availCubit type="purple_green" />				  
+
+			<mixel name="Glurt"  asset="tools/media/glurt.swf" nameAsset="tools/img/mixelNames/GLURT.png" iconAsset="tools/img/mixelIcons/glurt.png">
+				  <mixelDescription descrip="This slobbering slime hound is an avid garbage collector, gobbling up all the trash he can find." />
+				  <availCubit type="green_tan" />	
+				  <availCubit type="purple_green" />				  
+				  <videoAsset thumb="tools/tempVideo/Glurt_320x184.png" videoURL="tools/tempVideo/Glurt_640x360.f4v" />  
+			</mixel>
+
+			<mixel name="Glomp"  asset="tools/media/glomp.swf" nameAsset="tools/img/mixelNames/GLOMP.png" iconAsset="tools/img/mixelIcons/glomp.png">
+				  <mixelDescription  descrip="He's always hatching crazy schemes, but the real thing to look out for his runny nose." />
+				  <availCubit type="green_tan" />	
+				  <availCubit type="purple_green" />				  
+				  <videoAsset thumb="tools/tempVideo/Glomp_320x184.png" videoURL="tools/tempVideo/Glomp_640x360.f4v" />  
+			</mixel>
+						
+			<mixel name="Torts" asset="tools/media/torts.swf" nameAsset="tools/img/mixelNames/TORTS.png" iconAsset="tools/img/mixelIcons/torts.png">
+				  <mixelDescription descrip="Everything sticks to this slow-moving guy because his hands are covered with gloopy slime." />
+				  <availCubit type="green_tan" />	
+				  <availCubit type="purple_green" />				  
+				  <videoAsset thumb="tools/tempVideo/Torts_320x184.png" videoURL="tools/tempVideo/Torts_640x360.f4v" />  
+			</mixel>
+		</green>
+
+		<tan tribeName="Spikels" hex1="D9C694" hex2="B49455" nameAsset="tools/img/tribeTitles/spikels.png" music="tools/sounds/SpikelsLoop.mp3">
+				  <availCubit type="purple_tan" />	
+				  <availCubit type="green_tan" />				  
+
+			<mixel name="Scorpi" asset="tools/media/scorpi.swf" nameAsset="tools/img/mixelNames/SCORPI.png" iconAsset="tools/img/mixelIcons/scorpi.png">
+				  <mixelDescription descrip="This bug-eyed guy loves to snuggle, which is difficult when you have a tail this pointy." />
+				  <availCubit type="purple_tan" />	
+				  <availCubit type="green_tan" />	
+				  			  
+				  <videoAsset thumb="tools/tempVideo/Scorpi_320x184.png" videoURL="tools/tempVideo/Scorpi_640x360.f4v" />  
+				</mixel>
+			
+			<mixel name="Footi"  asset="tools/media/footi.swf" nameAsset="tools/img/mixelNames/FOOTI.png" iconAsset="tools/img/mixelIcons/footi.png">
+				  <mixelDescription  descrip="This lanky livewire lives to skip, jump and dance, but be careful of those huge, spiky feet." />
+				  <availCubit type="purple_tan" />	
+				  <availCubit type="green_tan" />	
+				  			  
+				  <videoAsset thumb="tools/tempVideo/Footi_320x184.png" videoURL="tools/tempVideo/Footi_640x360.f4v" />  
+			</mixel>
+			
+			<mixel name="Hoogi"  asset="tools/media/hoogi.swf" nameAsset="tools/img/mixelNames/HOOGI.png" iconAsset="tools/img/mixelIcons/hoogi.png">
+				  <mixelDescription descrip="He loves to give hugs, even though that can be tricky with his spiky claw hands." />				  
+				  <availCubit type="purple_tan" />	
+				  <availCubit type="green_tan" />				  
+				  <videoAsset thumb="tools/tempVideo/Hoogi_320x184.png" videoURL="tools/tempVideo/Hoogi_640x360.f4v" />  
+			</mixel>
+		</tan>
+
+
+
+
+	</tribes>
+	
+	
+	<cubits>
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Balloons.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Cake.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Golf.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_TeaCup.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Top.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Tornado.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Vacuum.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Calliope.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_CloudLighting.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Fireworks.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Mixer.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Popcorn.flv" />
+		  <transitionCubit type="success" videoURL="tools/tempVideo/Cubit_Shuffle.flv" />
+		  <transitionCubit type="fail" videoURL="tools/tempVideo/Cubit_Murp.flv" />
+		  
+		  <cubit type="redMax" hex1="DD2211" hex2="862423" activitySwfURL="tools/media/red_MaxActivity.swf" maxAsset="tools/media/max_red.swf" gameURL="tools/games/ibb_en.swf" gameThumb="tools/img/gameIcons/redGameCard.jpg"/>
+		  <cubit type="greyMax" hex1="888888" hex2="555555" activitySwfURL="tools/media/grey_MaxActivity.swf" maxAsset="tools/media/greyMax.swf" gameURL="tools/games/cg_en.swf" gameThumb="tools/img/gameIcons/greyGameCard.jpg"/>
+		  <cubit type="yellowMax" hex1="C29F08" hex2="FFD700" activitySwfURL="tools/media/yellow_MaxActivity.swf" maxAsset="tools/media/yellowMax.swf" gameURL="tools/games/etl_en.swf" gameThumb="tools/img/gameIcons/yellowGameCard.jpg" />
+
+		  <cubit type="blueMax" hex1="D4D4D4" hex2="00BEF6" activitySwfURL="tools/media/blue_MaxActivity.swf" maxAsset="tools/media/blueMax.swf" gameURL="tools/games/blue.swf" gameThumb="tools/img/gameIcons/blueGameCard.jpg"/>
+		  <cubit type="brownMax" hex1="501F00" hex2="753A11" activitySwfURL="tools/media/brown_MaxActivity.swf" maxAsset="tools/media/brownMax.swf" gameURL="tools/games/FangGang.swf" gameThumb="tools/img/gameIcons/brownGameCard.jpg"/>
+		  <cubit type="orangeMax" hex1="FF8500" hex2="D16200" activitySwfURL="tools/media/orange_MaxActivity.swf" maxAsset="tools/media/orangeMax.swf" gameURL="tools/games/orange.swf" gameThumb="tools/img/gameIcons/orangeGameCard.jpg" />
+
+		  <cubit type="purpleMax" hex1="6947AB" hex2="7B53C4" activitySwfURL="tools/media/purple_MaxActivity.swf" maxAsset="tools/media/purpleMax.swf" gameURL="tools/games/wi_en.swf" gameThumb="tools/img/gameIcons/purpleGameCard.jpg" />
+		  <cubit type="greenMax" hex1="02C337" hex2="81CF3A" activitySwfURL="tools/media/green_MaxActivity.swf" maxAsset="tools/media/greenMax.swf" gameURL="tools/games/gc_en.swf" gameThumb="tools/img/gameIcons/greenGameCard.jpg" />
+		  <cubit type="tanMax" hex1="D9C694" hex2="B49455" activitySwfURL="tools/media/tan_MaxActivity.swf" maxAsset="tools/media/tanMax.swf" gameURL="tools/games/sp_en.swf" gameThumb="tools/img/gameIcons/tanGameCard.jpg" />
+		  
+		  
+		  <!-- MAKE SURE THAT HEX COLORS ARE IN THE SAME ORDER AS THE CUBIT TYPE NAMES: IE FOR CUBIT TYPE "red_yellow", hex1 MUST BE FOR THE RED COLOR, NOT THE YELLOW COLOR, WHICH MUST BE hex2-->
+		  <cubit type="red_yellow" hex1="DD2211" hex2="FFD700" >
+			 <mixSet id="ry_1" mix="ZorchVolectro" asset="tools/media/mix_zorch_volectro.swf" >
+			 	<compatMixel name="Zorch"  iconAsset="tools/img/mixelIcons/zorch.png" />
+				<compatMixel name="Volectro"  iconAsset="tools/img/mixelIcons/volectro.png" />
+			 </mixSet>
+
+			 <mixSet id="ry_2" mix="ZorchTeslo" asset="tools/media/mix_zorch_teslo.swf" >
+			 	<compatMixel name="Zorch"  iconAsset="tools/img/mixelIcons/zorch.png" />
+				<compatMixel name="Teslo"  iconAsset="tools/img/mixelIcons/teslo.png" />
+			 </mixSet>
+			  		 
+			 <mixSet id="ry_3" mix="VulkZaptor" asset="tools/media/mix_vulk_zaptor.swf" >
+			 	<compatMixel name="Vulk"  iconAsset="tools/img/mixelIcons/vulk.png" />
+				<compatMixel name="Zaptor"  iconAsset="tools/img/mixelIcons/zaptor.png" />
+			 </mixSet> 
+			 
+			 <mixSet id="ry_4" mix="FlainTeslo" asset="tools/media/mix_flain_teslo.swf" >
+			 	<compatMixel name="Flain"  iconAsset="tools/img/mixelIcons/flain.png" />
+				<compatMixel name="Teslo"  iconAsset="tools/img/mixelIcons/teslo.png" />
+			 </mixSet> 			 
+
+			 <mixSet id="ry_5" mix="VulkVolectro" asset="tools/media/mix_vulk_volectro.swf">
+			 	<compatMixel name="Vulk"  iconAsset="tools/img/mixelIcons/vulk.png" />
+				<compatMixel name="Volectro"  iconAsset="tools/img/mixelIcons/volectro.png" />
+			 </mixSet>   			 
+
+		  </cubit>		  
+		  
+		  
+		  
+		  <cubit type="grey_red" hex1="888888" hex2="DD2211" >
+			 <mixSet id="gr_1" mix="FlainSeismo" asset="tools/media/mix_flain_seismo.swf"  >
+			 	<compatMixel name="Flain"  iconAsset="tools/img/mixelIcons/flain.png" />
+				<compatMixel name="Seismo"  iconAsset="tools/img/mixelIcons/seismo.png" />
+			 </mixSet> 
+			 
+			<mixSet id="gr_2" mix="ZorchSeismo" asset="tools/media/mix_zorch_seismo.swf"  >
+			 	<compatMixel name="Zorch"  iconAsset="tools/img/mixelIcons/zorch.png" />
+				<compatMixel name="Seismo"  iconAsset="tools/img/mixelIcons/seismo.png" />
+			 </mixSet> 
+			 
+			 <mixSet id="gr_3" mix="FlainKrader" asset="tools/media/mix_flain_krader.swf"  >
+			 	<compatMixel name="Flain"  iconAsset="tools/img/mixelIcons/flain.png" />
+				<compatMixel name="Krader"  iconAsset="tools/img/mixelIcons/krader.png" />
+			 </mixSet> 
+			 
+			<mixSet id="gr_4" mix="SeismoVulk" asset="tools/media/mix_seismo_vulk.swf"  >
+			 	<compatMixel name="Seismo"  iconAsset="tools/img/mixelIcons/seismo.png" />
+				<compatMixel name="Vulk"  iconAsset="tools/img/mixelIcons/vulk.png" />
+			 </mixSet> 
+			 
+			<mixSet id="gr_5" mix="ShuffZorch" asset="tools/media/mix_shuff_zorch.swf"  >
+			 	<compatMixel name="Shuff"  iconAsset="tools/img/mixelIcons/shuff.png" />
+				<compatMixel name="Zorch"  iconAsset="tools/img/mixelIcons/zorch.png" />
+			 </mixSet> 	
+		  </cubit>
+		  
+		  
+		  <cubit type="grey_yellow" hex1="888888" hex2="FFD700" >			  
+
+			 <mixSet id="gy_1" mix="ShuffZaptor" asset="tools/media/mix_shuff_zaptor.swf">
+			 	<compatMixel name="Zaptor"  iconAsset="tools/img/mixelIcons/zaptor.png" />
+				<compatMixel name="Shuff"  iconAsset="tools/img/mixelIcons/shuff.png" />
+			 </mixSet> 
+			 
+			 <mixSet id="gy_2" mix="ZaptorSeismo" asset="tools/media/mix_zaptor_seismo.swf">
+			 	<compatMixel name="Zaptor"  iconAsset="tools/img/mixelIcons/zaptor.png" />
+				<compatMixel name="Seismo"  iconAsset="tools/img/mixelIcons/seismo.png" />
+			 </mixSet> 
+			 		 
+			<mixSet id="gy_3" mix="KraderTeslo" asset="tools/media/mix_krader_teslo.swf">
+			 	<compatMixel name="Krader"  iconAsset="tools/img/mixelIcons/krader.png" />
+				<compatMixel name="Teslo"  iconAsset="tools/img/mixelIcons/teslo.png" />
+			 </mixSet>
+			 
+			 <mixSet id="gy_4" mix="ShuffVolectro" asset="tools/media/mix_shuff_volectro.swf">
+			 	<compatMixel name="Volectro"  iconAsset="tools/img/mixelIcons/volectro.png" />
+				<compatMixel name="Shuff"  iconAsset="tools/img/mixelIcons/shuff.png" />
+			 </mixSet> 			 
+			 
+			 <mixSet id="gy_5" mix="VolectroKrader" asset="tools/media/mix_volectro_krader.swf">
+			 	<compatMixel name="Volectro"  iconAsset="tools/img/mixelIcons/volectro.png" />
+				<compatMixel name="Krader" iconAsset="tools/img/mixelIcons/krader.png"  />
+			 </mixSet>
+			 
+			 <mixSet id="gy_6" mix="SeismoVolectro" asset="tools/media/mix_seismo_volectro.swf">
+			 	<compatMixel name="Seismo"  iconAsset="tools/img/mixelIcons/seismo.png" />
+				<compatMixel name="Volectro"  iconAsset="tools/img/mixelIcons/volectro.png" />
+			 </mixSet> 
+
+		  </cubit>
+
+		  <cubit type="blue_orange" hex1="00BEF6" hex2="FF8500" >			  
+
+			 <!-- <mixSet id="bo_1" mix="FlurrKraw" asset="tools/media/mix_flurr_kraw.swf" >
+			 	<compatMixel name="Flurr"  iconAsset="tools/img/mixelIcons/flurr.png" />
+				<compatMixel name="Kraw"  iconAsset="tools/img/mixelIcons/kraw.png" />
+			 </mixSet> 
+				-->
+				
+			 <mixSet id="bo_2" mix="LunkTentro" asset="tools/media/mix_lunk_tentro.swf" >
+			 	<compatMixel name="Lunk"  iconAsset="tools/img/mixelIcons/lunk.png" />
+				<compatMixel name="Tentro"  iconAsset="tools/img/mixelIcons/tentro.png" />
+			 </mixSet> 
+
+			 <mixSet id="bo_1" mix="SlumboKraw" asset="tools/media/mix_slumbo_kraw.swf" >
+			 	<compatMixel name="Slumbo"  iconAsset="tools/img/mixelIcons/slumbo.png" />
+				<compatMixel name="Kraw"  iconAsset="tools/img/mixelIcons/kraw.png" />
+			 </mixSet> 
+			 
+			 <mixSet id="bo_2" mix="LunkBalk" asset="tools/media/mix_lunk_balk.swf" >
+			 	<compatMixel name="Lunk"  iconAsset="tools/img/mixelIcons/lunk.png" />
+				<compatMixel name="Balk"  iconAsset="tools/img/mixelIcons/balk.png" />
+			 </mixSet> 
+
+			 <mixSet id="bo_1" mix="FlurrKraw" asset="tools/media/mix_flurr_kraw.swf" >
+			 	<compatMixel name="Flurr"  iconAsset="tools/img/mixelIcons/flurr.png" />
+				<compatMixel name="Kraw"  iconAsset="tools/img/mixelIcons/kraw.png" />
+			 </mixSet> 
+
+
+		  </cubit>
+
+		  <cubit type="blue_brown" hex1="00BEF6" hex2="501F00" >			  
+
+			 <mixSet id="bbw_1" mix="SlumboJawg" asset="tools/media/mix_slumbo_jawg.swf" >
+			 	<compatMixel name="Slumbo"  iconAsset="tools/img/mixelIcons/slumbo.png" />
+				<compatMixel name="Jawg"  iconAsset="tools/img/mixelIcons/jawg.png" />
+			 </mixSet> 
+
+			 <mixSet id="bbw_2" mix="FlurrGobba" asset="tools/media/mix_flurr_gobba.swf" >
+			 	<compatMixel name="Flurr"  iconAsset="tools/img/mixelIcons/flurr.png" />
+				<compatMixel name="Gobba"  iconAsset="tools/img/mixelIcons/gobba.png" />
+			 </mixSet> 
+
+			 <mixSet id="bbw_2" mix="FlurrChomly" asset="tools/media/mix_flurr_chomly.swf" >
+			 	<compatMixel name="Flurr"  iconAsset="tools/img/mixelIcons/flurr.png" />
+				<compatMixel name="Chomly"  iconAsset="tools/img/mixelIcons/chomly.png" />
+			 </mixSet> 
+
+			 <mixSet id="bbw_2" mix="LunkJawg" asset="tools/media/mix_lunk_jawg.swf" >
+			 	<compatMixel name="Lunk"  iconAsset="tools/img/mixelIcons/lunk.png" />
+				<compatMixel name="Jawg"  iconAsset="tools/img/mixelIcons/jawg.png" />
+			 </mixSet> 
+
+
+		  </cubit>
+
+		  <cubit type="blue_red" hex1="00BEF6" hex2="DD2211" >			  
+
+			 <mixSet id="br_1" mix="SlumboFlain" asset="tools/media/mix_flain_slumbo.swf" >
+			 	<compatMixel name="Slumbo"  iconAsset="tools/img/mixelIcons/slumbo.png" />
+				<compatMixel name="Flain"  iconAsset="tools/img/mixelIcons/flain.png" />
+			 </mixSet> 
+
+			 <mixSet id="br_3" mix="LunkVulk" asset="tools/media/mix_lunk_vulk.swf" >
+			 	<compatMixel name="Lunk"  iconAsset="tools/img/mixelIcons/lunk.png" />
+				<compatMixel name="Vulk"  iconAsset="tools/img/mixelIcons/vulk.png" />
+			 </mixSet> 
+
+			 <mixSet id="br_4" mix="LunkFlain" asset="tools/media/mix_flain_lunk.swf" >
+			 	<compatMixel name="Lunk"  iconAsset="tools/img/mixelIcons/lunk.png" />
+				<compatMixel name="Flain"  iconAsset="tools/img/mixelIcons/flain.png" />
+			 </mixSet> 
+	
+			 <mixSet id="br_4" mix="VulkSlumbo" asset="tools/media/mix_vulk_slumbo.swf" >
+				<compatMixel name="Vulk"  iconAsset="tools/img/mixelIcons/vulk.png" />
+			 	<compatMixel name="Slumbo"  iconAsset="tools/img/mixelIcons/slumbo.png" />
+			 </mixSet> 		 
+			 
+
+		  </cubit>
+
+
+		  <cubit type="brown_orange" hex1="501F00" hex2="FF8500" >
+		  
+			 <mixSet id="bwo_1" mix="GobbaTentro" asset="tools/media/mix_gobba_tentro.swf" >
+			 	<compatMixel name="Gobba"  iconAsset="tools/img/mixelIcons/gobba.png" />
+				<compatMixel name="Tentro"  iconAsset="tools/img/mixelIcons/tentro.png" />
+			 </mixSet> 
+
+			 <mixSet id="bwo_2" mix="GobbaKraw" asset="tools/media/mix_gobba_kraw.swf" >
+			 	<compatMixel name="Gobba"  iconAsset="tools/img/mixelIcons/gobba.png" />
+				<compatMixel name="Kraw"  iconAsset="tools/img/mixelIcons/kraw.png" />
+			 </mixSet> 
+
+			 <mixSet id="bwo_3" mix="JawgBalk" asset="tools/media/mix_jawg_balk.swf" >
+			 	<compatMixel name="Jawg"  iconAsset="tools/img/mixelIcons/jawg.png" />
+				<compatMixel name="Balk"  iconAsset="tools/img/mixelIcons/balk.png" />
+			 </mixSet> 
+			 
+
+			 <mixSet id="bwo_4" mix="ChomlyTentro" asset="tools/media/mix_chomly_tentro.swf" >
+			 	<compatMixel name="Chomly"  iconAsset="tools/img/mixelIcons/chomly.png" />
+				<compatMixel name="Tentro"  iconAsset="tools/img/mixelIcons/tentro.png" />
+			 </mixSet> 
+
+			 <mixSet id="bwo_4" mix="ChomlyBalk" asset="tools/media/mix_chomly_balk.swf" >
+			 	<compatMixel name="Chomly"  iconAsset="tools/img/mixelIcons/chomly.png" />
+				<compatMixel name="Balk"  iconAsset="tools/img/mixelIcons/balk.png" />
+			 </mixSet> 
+
+		  </cubit>
+
+		  <cubit type="orange_yellow" hex1="FF8500" hex2="FFD700" >
+		  
+			 <mixSet id="oy_1" mix="TentroTeslo" asset="tools/media/mix_tentro_teslo.swf" >
+				<compatMixel name="Tentro"  iconAsset="tools/img/mixelIcons/tentro.png" />
+			 	<compatMixel name="Teslo"  iconAsset="tools/img/mixelIcons/teslo.png" />
+			 </mixSet>
+
+			 <mixSet id="oy_2" mix="KrawVolectro" asset="tools/media/mix_kraw_volectro.swf" >
+				<compatMixel name="Kraw"  iconAsset="tools/img/mixelIcons/kraw.png" />
+			 	<compatMixel name="Volectro"  iconAsset="tools/img/mixelIcons/volectro.png" />
+			 </mixSet>
+			 
+			 <mixSet id="oy_3" mix="KrawZaptor" asset="tools/media/mix_kraw_zaptor.swf" >
+				<compatMixel name="Kraw"  iconAsset="tools/img/mixelIcons/kraw.png" />
+			 	<compatMixel name="Zaptor"  iconAsset="tools/img/mixelIcons/zaptor.png" />
+			 </mixSet>
+
+			 <mixSet id="oy_5" mix="BalkVolectro" asset="tools/media/mix_balk_volectro.swf" >
+				<compatMixel name="Balk"  iconAsset="tools/img/mixelIcons/balk.png" />
+			 	<compatMixel name="Volectro"  iconAsset="tools/img/mixelIcons/volectro.png" />
+			 </mixSet>
+
+		 </cubit>
+
+		  <cubit type="purple_green" hex1="6947AB" hex2="02C337" >
+		  
+			 <mixSet id="pg_1" mix="MesmoGlomp" asset="tools/media/mix_mesmo_glomp.swf" >
+				<compatMixel name="Mesmo"  iconAsset="tools/img/mixelIcons/mesmo.png" />
+			 	<compatMixel name="Glomp"  iconAsset="tools/img/mixelIcons/glomp.png" />
+			 </mixSet>
+			 
+			 <mixSet id="pg_3" mix="MagnifoGlurt" asset="tools/media/mix_magnifo_glurt.swf" >
+				<compatMixel name="Magnifo"  iconAsset="tools/img/mixelIcons/magnifo.png" />
+			 	<compatMixel name="Glurt"  iconAsset="tools/img/mixelIcons/glurt.png" />
+			 </mixSet>
+
+			 <mixSet id="pg_4" mix="WizwuzTorts" asset="tools/media/mix_wizwuz_torts.swf" >
+				<compatMixel name="Wizwuz"  iconAsset="tools/img/mixelIcons/wizwuz.png" />
+			 	<compatMixel name="Torts"  iconAsset="tools/img/mixelIcons/torts.png" />
+			 </mixSet>
+
+			 <mixSet id="pg_5" mix="MesmoTorts" asset="tools/media/mix_mesmo_torts.swf" >
+				<compatMixel name="Mesmo"  iconAsset="tools/img/mixelIcons/mesmo.png" />
+			 	<compatMixel name="Torts"  iconAsset="tools/img/mixelIcons/torts.png" />
+			 </mixSet>
+
+		 </cubit>
+
+		  <cubit type="purple_tan" hex1="6947AB" hex2="D9C694" >
+
+			 <mixSet id="pt_2" mix="MagnifoHoogi" asset="tools/media/mix_magnifo_hoogi.swf" >
+				<compatMixel name="Magnifo"  iconAsset="tools/img/mixelIcons/magnifo.png" />
+			 	<compatMixel name="Hoogi"  iconAsset="tools/img/mixelIcons/hoogi.png" />
+			 </mixSet>
+			 
+			 <mixSet id="pt_3" mix="MagnifoFooti" asset="tools/media/mix_magnifo_footi.swf" >
+				<compatMixel name="Magnifo"  iconAsset="tools/img/mixelIcons/magnifo.png" />
+			 	<compatMixel name="Footi"  iconAsset="tools/img/mixelIcons/footi.png" />
+			 </mixSet>
+
+			 <mixSet id="pt_4" mix="WizwuzFooti" asset="tools/media/mix_wizwuz_footi.swf" >
+				<compatMixel name="Wizwuz"  iconAsset="tools/img/mixelIcons/wizwuz.png" />
+			 	<compatMixel name="Footi"  iconAsset="tools/img/mixelIcons/footi.png" />
+			 </mixSet>
+
+			 <mixSet id="pt_5" mix="MesmoScorpi" asset="tools/media/mix_mesmo_scorpi.swf" >
+				<compatMixel name="Mesmo"  iconAsset="tools/img/mixelIcons/mesmo.png" />
+			 	<compatMixel name="Scorpi"  iconAsset="tools/img/mixelIcons/scorpi.png" />
+			 </mixSet>
+
+		 </cubit>
+		 
+		 <cubit type="green_tan" hex1="02C337" hex2="D9C694" >
+		  
+			 <mixSet id="gt_1" mix="TortsHoogi" asset="tools/media/mix_torts_hoogi.swf" >
+				<compatMixel name="Torts"  iconAsset="tools/img/mixelIcons/torts.png" />
+			 	<compatMixel name="Hoogi"  iconAsset="tools/img/mixelIcons/hoogi.png" />
+			 </mixSet>
+
+			 <mixSet id="gt_2" mix="TortsScorpi" asset="tools/media/mix_torts_scorpi.swf" >
+				<compatMixel name="Torts"  iconAsset="tools/img/mixelIcons/torts.png" />
+			 	<compatMixel name="Scorpi"  iconAsset="tools/img/mixelIcons/scorpi.png" />
+			 </mixSet>
+			 
+			 <mixSet id="gt_4" mix="GlompFooti" asset="tools/media/mix_glomp_footi.swf" >
+				<compatMixel name="Glomp"  iconAsset="tools/img/mixelIcons/glomp.png" />
+			 	<compatMixel name="Footi"  iconAsset="tools/img/mixelIcons/footi.png" />
+			 </mixSet>
+
+			 <mixSet id="gt_5" mix="GlurtScorpi" asset="tools/media/mix_glurt_scorpi.swf" >
+				<compatMixel name="Glurt"  iconAsset="tools/img/mixelIcons/glurt.png" />
+			 	<compatMixel name="Scorpi"  iconAsset="tools/img/mixelIcons/scorpi.png" />
+			 </mixSet>
+
+		 </cubit>
+
+
+	</cubits>
+</cartoonnetwork>
